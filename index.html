@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Redirects</title>
+</head>
+<body>
+
+<button id="genetic">Genetic</button>
+<button id="immuno">Immuno</button>
+<button id="nutrition">Nutrition</button>
+<button id="pathoClinic">PathoClinic</button>
+<button id="physics">Physics</button>
+
+<script>
+// Add event listeners to the buttons
+document.getElementById("genetic").addEventListener("click", function() {
+  redirectToPage("genetic");
+});
+document.getElementById("immuno").addEventListener("click", function() {
+  redirectToPage("immuno");
+});
+document.getElementById("nutrition").addEventListener("click", function() {
+  redirectToPage("nutrition");
+});
+document.getElementById("pathoClinic").addEventListener("click", function() {
+  redirectToPage("pathoClinic");
+});
+document.getElementById("physics").addEventListener("click", function() {
+  redirectToPage("physics");
+});
+
+// Function to redirect to the specified page
+function redirectToPage(name) {
+  // Replace this URL with your server's routing logic
+  window.location.href = "/" + name + ".html";
+}
+</script>
+
+</body>
+</html>
